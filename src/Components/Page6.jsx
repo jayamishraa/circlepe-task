@@ -4,23 +4,30 @@ export default function Page6() {
         
         {/* Circle Radial Gradient on the Top Left */}
         <div className="absolute top-[-300px] left-[-450px] w-[1103px] h-[1071.08px] rounded-full bg-[radial-gradient(35.19%_35.19%_at_50%_50%,_rgba(100,_149,_255,_0.1)_0%,_rgba(28,_106,_197,_0)_100%)]"></div>
-  
+
         {/* Text Content */}
-        <div className="absolute left-[227px] z-10 top-[268px] text-white w-[442px] h-[258px]">
-          <h1 className="text-5xl font-semibold">Step 4</h1>
-          <ul className="text-lg mt-4 list-disc list-inside">
-            <li>Tenants get approved to move-in:</li>
-            <li>Gets Zero-security deposit approval</li>
-            <li>Zero cost EMI = Monthly Rent</li>
-          </ul>
+        <div className="absolute left-[250px] z-10 top-[200px] text-white w-[283px] h-[118px]">
+          <h1 className="text-[50px] font-medium text-left font-league-spartan leading-none">
+            <span className="text-[#AAAAAA]">Step</span> 4
+          </h1>
+          {/* Line Separator */}
+          <div className="my-4 border-t border-[#5AA5FD] w-[84.02px] mt-[33px] mb-[33px] "></div>
+
+          <p className="text-[15px] font-medium leading-none text-left font-league-spartan mt-4">
+            <ul className="list-disc list-inside space-y-3">
+              <li>Tenants get approved to move-in:</li>
+              <li>Gets Zero-security deposit approval</li>
+              <li>Zero cost EMI = Monthly Rent</li>
+            </ul>
+          </p>
         </div>
   
         {/* Image */}
-        <div className="absolute top-20 right-[300px] p-4 z-10">
+        <div className="absolute top-20 right-[330px] p-4 z-10">
           <img src="/Images/step4.png" alt="Screenshot" className="w-[200px] h-auto" />
         </div>
 
-        <div className="absolute top-[290px] left-[570px] p-4 z-20 rotate-45 transform scale-y-[-1]">
+        <div className="absolute top-[290px] left-[540px] p-4 z-20 rotate-45 transform scale-y-[-1]">
           <img src="/Images/arrow.svg" alt="Screenshot" className="w-[252px] h-[249.82px]" />
         </div>
   

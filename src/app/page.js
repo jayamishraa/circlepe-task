@@ -7,7 +7,7 @@ import Page6 from "@/Components/Page6";
 export default function Background() {
   return (
     <div>
-      <Page1 />    
+      {/* <Page1 />     */}
       {/* <Page2 />     */}
       {/* <Page4 />     */}
       {/* <Page5 />     */}
