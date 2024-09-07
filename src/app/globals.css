@@ -14,6 +14,7 @@
   }
 }
 
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -24,4 +25,26 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.larger-bullets {
+  list-style-type: none;
+  padding-left: 1rem; 
+}
+
+.larger-bullets li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.larger-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px; 
+  height: 10px; 
+  background-color: #FAFAFA;
+  border-radius: 50%; 
 }
