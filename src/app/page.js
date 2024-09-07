@@ -73,19 +73,23 @@ export default function Background() {
   }, [currentPageIndex]);
 
   return (
-    <div className="h-screen bottom-0 w-screen overflow-hidden">
-      {/* Render the current page with smooth transition */}
-      {pages.map((PageComponent, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: currentPageIndex === index ? 1 : 0}}
-          transition={{ duration: 0.5, ease: "easeOut"}}
-          className="absolute flex items-center justify-center"
-        >
-          <PageComponent />
-        </motion.div>
-      ))}
+    <div className="h-screen bottom-0 w-screen no-scrollbar">
+      {/* Render the current page with smooth transition and opacity change */}
+      {pages.map((PageComponent, index) => {
+        const isCurrentPage = currentPageIndex === index;
+
+        return (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isCurrentPage ? 1 : 0 }} // Fade in current page, fade out others
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className={`absolute inset-0 flex items-center justify-center z-20`}
+          >
+            <PageComponent />
+          </motion.div>
+        );
+      })}
       
       <div className="fixed top-[-50px] left-1/2 rotate-90 md:rotate-0 md:top-1/2 md:right-[-500px] md:transform md:-translate-y-1/2 flex flex-col items-center z-30">
         <div className="w-[2px] h-40 bg-[#424242]"></div>
