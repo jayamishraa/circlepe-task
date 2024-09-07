@@ -1,12 +1,12 @@
 # CirclePe Hiring Task App
 
-## A task management app built with Next.js, Framer Motion, and Tailwind CSS. The app provides a clean and responsive interface, utilizing smooth animations and modern design principles to enhance the user experience.
+ A task management app built with Next.js, Framer Motion, and Tailwind CSS. The app provides a clean and responsive interface, utilizing smooth animations and modern design principles to enhance the user experience.
 
 
 ## Video Demo:
-https://github.com/user-attachments/assets/2283703e-75f9-4cbd-be9c-0126e62c6f91
-
 https://github.com/user-attachments/assets/4000147c-8f5b-43db-a00a-baa65ca54920
+
+https://github.com/user-attachments/assets/2283703e-75f9-4cbd-be9c-0126e62c6f91
 
 
 
