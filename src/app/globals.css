@@ -32,15 +32,10 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: 0;  /* Firefox */
   }
-<<<<<<< Updated upstream
 }
 html, body {
   @apply no-scrollbar;
 }
-=======
-}
-
->>>>>>> Stashed changes
 .larger-bullets {
   list-style-type: none;
   padding-left: 1rem; 
@@ -60,7 +55,4 @@ html, body {
   height: 10px; 
   background-color: #FAFAFA;
   border-radius: 50%; 
-}
-html, body {
-  @apply no-scrollbar;
 }
